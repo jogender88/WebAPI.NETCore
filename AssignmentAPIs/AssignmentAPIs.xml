@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AssignmentAPIs</name>
+    </assembly>
+    <members>
+        <member name="T:AssignmentAPIs.Controllers.UsersController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.Controllers.UsersController.#ctor(AssignmentAPIs.services.IHelperClass)">
+            <summary>
+            Constructor Dependency Injection 
+            </summary>
+            <param name="_helperClass"></param>
+        </member>
+        <member name="M:AssignmentAPIs.Controllers.UsersController.GetUsers">
+            <summary>
+            Method for getting All the users from Users Table
+            </summary>
+            <returns>Return IAction Result with All Users data</returns>
+        </member>
+        <member name="M:AssignmentAPIs.Controllers.UsersController.GetGender">
+            <summary>
+            Method for getting Gender from gender table
+            </summary>
+            <returns>Returns Gender object </returns>
+        </member>
+        <member name="M:AssignmentAPIs.Controllers.UsersController.Register(APIsModel.ViewModel.RegisterModel)">
+            <summary>
+            Method for register new user
+            Takes parameter of type Users Model
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.Controllers.UsersController.GetUser(APIsModel.ViewModel.LoginModel)">
+            <summary>
+            Method for Get Login user details
+            Takes Login model Type object as Parameter
+            </summary>
+            <param name="model"></param>
+            <returns>Returns APIResponse object</returns>
+        </member>
+        <member name="T:AssignmentAPIs.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:AssignmentAPIs.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AssignmentAPIs.services.APIResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.APIResponse.StatusCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.APIResponse.user">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.APIResponse.Token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AssignmentAPIs.services.APIUnauthorizedResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.APIUnauthorizedResponse.StatusCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.APIUnauthorizedResponse.ErrorMEssage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AssignmentAPIs.services.GetUserResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.GetUserResponse.StatusCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.GetUserResponse.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AssignmentAPIs.services.GetGenderResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.GetGenderResponse.StatusCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.GetGenderResponse.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AssignmentAPIs.services.AuthorizationActionFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.services.AuthorizationActionFilter.#ctor">
+            <summary>l
+            
+            </summary>
+            <param ></param>
+        </member>
+        <member name="M:AssignmentAPIs.services.AuthorizationActionFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:AssignmentAPIs.services.AuthorizationActionFilter.CheckUserPermission(System.Security.Claims.ClaimsPrincipal,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AssignmentAPIs.services.AuthorizeAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.services.AuthorizeAttribute.#ctor">
+            <summary>
+            
+            </summary>
+            <param ></param>
+        </member>
+        <member name="T:AssignmentAPIs.services.FakeHelperClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.FakeHelperClass.AllUsers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.FakeHelperClass.Genders">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.services.FakeHelperClass.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.services.FakeHelperClass.GenerateJSONWebToken(APIsModel.Model.Users)">
+            <summary>
+            
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.FakeHelperClass.GetAllGender">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.FakeHelperClass.GetAllUsers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.FakeHelperClass.GetLoginUser(APIsModel.ViewModel.LoginModel)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.FakeHelperClass.RegisterUser(APIsModel.ViewModel.RegisterModel)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.FakeHelperClass.GetUser(APIsModel.ViewModel.LoginModel)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AssignmentAPIs.services.HelperClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.services.HelperClass.#ctor(APIsModel.Model.AssignmentContext,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="_assignmentContext"></param>
+            <param name="config"></param>
+        </member>
+        <member name="P:AssignmentAPIs.services.HelperClass.AllUsers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AssignmentAPIs.services.HelperClass.Genders">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.services.HelperClass.GetAllUsers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.HelperClass.RegisterUser(APIsModel.ViewModel.RegisterModel)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.HelperClass.GetAllGender">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.HelperClass.GetUser(APIsModel.ViewModel.LoginModel)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.HelperClass.GenerateJSONWebToken(APIsModel.Model.Users)">
+            <summary>
+            
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.HelperClass.GetLoginUser(APIsModel.ViewModel.LoginModel)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AssignmentAPIs.services.IHelperClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.services.IHelperClass.GetAllUsers">
+            <summary>
+            
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.IHelperClass.RegisterUser(APIsModel.ViewModel.RegisterModel)">
+            <summary>
+            
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.IHelperClass.GetAllGender">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.IHelperClass.GetLoginUser(APIsModel.ViewModel.LoginModel)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.IHelperClass.GetUser(APIsModel.ViewModel.LoginModel)">
+            <summary>
+            
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssignmentAPIs.services.IHelperClass.GenerateJSONWebToken(APIsModel.Model.Users)">
+            <summary>
+            
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AssignmentAPIs.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:AssignmentAPIs.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AssignmentAPIs.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:AssignmentAPIs.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+D:\Projects\AssignmentWebAPIs\APIsModel\bin\Debug\netcoreapp3.1\APIsModel.deps.json
+D:\Projects\AssignmentWebAPIs\APIsModel\bin\Debug\netcoreapp3.1\APIsModel.dll
+D:\Projects\AssignmentWebAPIs\APIsModel\obj\Debug\netcoreapp3.1\APIsModel.AssemblyInfoInputs.cache
+D:\Projects\AssignmentWebAPIs\APIsModel\obj\Debug\netcoreapp3.1\APIsModel.AssemblyInfo.cs
+D:\Projects\AssignmentWebAPIs\APIsModel\bin\Debug\netcoreapp3.1\APIsModel.runtimeconfig.json
+D:\Projects\AssignmentWebAPIs\APIsModel\bin\Debug\netcoreapp3.1\APIsModel.runtimeconfig.dev.json
+D:\Projects\AssignmentWebAPIs\APIsModel\bin\Debug\netcoreapp3.1\APIsModel.pdb
+D:\Projects\AssignmentWebAPIs\APIsModel\obj\Debug\netcoreapp3.1\APIsModel.dll
+D:\Projects\AssignmentWebAPIs\APIsModel\obj\Debug\netcoreapp3.1\APIsModel.pdb
+D:\Projects\AssignmentWebAPIs\APIsModel\obj\Debug\netcoreapp3.1\APIsModel.csprojAssemblyReference.cache
